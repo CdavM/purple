@@ -1,11 +1,24 @@
 Router.route('/', function(){
 if (Session.equals('worker_ID_value', -1) || ! Session.get('worker_ID_value')){
-      //if no worker_ID found redirect back to starting page
-  Router.go('/end');
+  //if no worker_ID found redirect back to starting page
+  //worker_ID randomly generated for easier debugging
+  Router.go('/WID='+makeid()+'&ASG='+makeid());
+  //Router.go('/end');
   } else {
     this.render('experiment');
   }
 });
+
+function makeid()
+{
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for( var i=0; i < 10; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}
 
 Router.route('/WID=:wid&ASG=:asg', function(){
   var wid = this.params.wid;
