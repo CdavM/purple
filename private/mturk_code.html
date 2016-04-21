@@ -1,0 +1,35 @@
+<p>We are a research group at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>. Click on the link below to go to the game. Note that we use a separate database to log entries, so you do not need to enter anything on this website.</p>
+
+<p><strong>Please make sure to leave this window open as you complete the survey. </strong>When you are finished, you will return to this page and submit the HIT.</p>
+
+<p>Click this link to go to the survey, complete it and return here to submit the HIT:</p>
+
+<div id="myelementLink" style="display: inline; font-family: Verdana;"><tt>URL not shown because there is an error with Javascript on your computer. To perform this HIT, you must have Javascript and cookies enabled on your browser.</tt></div>
+<script type="text/javascript" language="JavaScript"><!--
+var assignment_id_field = document.getElementById('myelementLink');
+var paramstr = window.location.search.substring(1);
+var parampairs = paramstr.split("&");
+var mturkworkerID = "";
+var assignID = "";
+for (i in parampairs) {
+  var pair = parampairs[i].split("=");
+  if (pair[0] == "workerId"){
+    mturkworkerID = pair[1];
+  } else if (pair[0] == "assignmentId"){
+    assignID = pair[1];
+  }
+}
+if (mturkworkerID == "" ) {
+  assignment_id_field.innerHTML = '<tt>A personalized link will appear once you accept the HIT. <a target="_blank" href="http://btsturk.meteor.com">http://btsturk.meteor.com</a> </tt>';
+} else {
+  assignment_id_field.innerHTML = '<a target="_blank" href="http://btsturk.meteor.com/WID=' + mturkworkerID + '&ASG=' + assignID +'"><p><b>http://btsturk.meteor.com/WID=' + mturkworkerID + '&ASG=' + assignID + '</b></span></span></p></a>';
+}
+// --></script>
+
+<!-- credits for this script go to http://research-tricks.blogspot.com/ -->
+
+<div class="link" id="linkDiv">&nbsp;</div>
+
+<p>If you had any problems on the website or would like to leave us additional feedback, please let us know below:</p>
+
+<p><input name="feedback" style="width:300px;height:100px;" type="text" />&nbsp;</p>

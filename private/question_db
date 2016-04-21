@@ -1,0 +1,28 @@
+db.questions.insert({question_ID:0, prior_deck0:5, prior_deck1:5, deck0_opt0:7, deck0_opt1:3, deck1_opt0:3, deck1_opt1:7})
+db.questions.insert({question_ID:1, prior_deck0:5, prior_deck1:5, deck0_opt0:10, deck0_opt1:0, deck1_opt0:0, deck1_opt1:10})
+db.questions.insert({question_ID:2, prior_deck0:3, prior_deck1:7, deck0_opt0:8, deck0_opt1:2, deck1_opt0:4, deck1_opt1:6})
+db.questions.insert({question_ID:3, prior_deck0:4, prior_deck1:6, deck0_opt0:8, deck0_opt1:2, deck1_opt0:7, deck1_opt1:3})
+db.questions.insert({question_ID:4, prior_deck0:8, prior_deck1:2, deck0_opt0:6, deck0_opt1:4, deck1_opt0:5, deck1_opt1:5})
+
+db.questions.insert({question_ID:0, text: "mechanism 1", statement:"Assuming that every other employee, including Lenny, is truthful in his or her answer, should Sam also be truthful in order to maximize his reward?"})
+
+db.questions.insert({question_ID:1, text: "mechanism 1", statement:"Assuming that every other employee, including Lenny, is truthful in his or her answer, should Sam lie in order to maximize his reward?"})
+
+db.questions.insert({question_ID:2, text: "mechanism 2", statement:"Assuming that every other employee, including Lenny, is truthful in his or her answer, should Sam also be truthful in order to maximize his reward?"})
+
+db.questions.insert({question_ID:3, text: "mechanism 2", statement:"Assuming that every other employee, including Lenny, is truthful in his or her answer, should Sam lie in order to maximize his reward?"})
+
+db.questions.insert({question_ID:4, text: "mechanism 3", statement:"Assuming that every other employee, including Lenny, is truthful in his or her answer, should Sam also be truthful in order to maximize his reward?"})
+
+db.questions.insert({question_ID:5, text: "mechanism 3", statement:"Assuming that every other employee, including Lenny, is truthful in his or her answer, should Sam lie in order to maximize his reward?"})
+
+db.questions.insert({question_ID:6, text: "mechanism 4", statement:"Assuming that every other employee, including Lenny, is truthful in his or her answer, should Sam also be truthful in order to maximize his reward?"})
+
+db.questions.insert({question_ID:7, text: "mechanism 4", statement:"Assuming that every other employee, including Lenny, is truthful in his or her answer, should Sam lie in order to maximize his reward?"})
+
+
+
+
+db.questions.insert({question_ID:1, text: "mechanism 2", question:"should homer yogurt?"})
+db.questions.insert({question_ID:2, text: "mechanism 1", question:"should homer cereal?"})
+db.questions.insert({question_ID:3, text: "mechanism 2", question:"should homer cereal?"})

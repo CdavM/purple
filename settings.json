@@ -1,0 +1,26 @@
+{
+	"threshold_workers": 1, 
+	"questions": [
+		{"question_ID":0, "text":"Mechanism 1", "boss": "often late for their meetings.", "statement": "maximize his payment"},
+		{"question_ID":1, "text":"Mechanism 2", "boss": "often late for their meetings.", "statement": "maximize his payment"},
+		{"question_ID":2, "text":"Mechanism 3", "boss": "often late for their meetings.", "statement": "maximize his payment"},
+		{"question_ID":3, "text":"Mechanism 4", "boss": "often late for their meetings.", "statement": "maximize his payment"},
+		{"question_ID":4, "text":"Mechanism -1", "boss": "often late for their meetings.", "statement": "minimize his penalty"},
+		{"question_ID":5, "text":"Mechanism -2", "boss": "often late for their meetings.", "statement": "minimize his penalty"},
+		{"question_ID":6, "text":"Mechanism -3", "boss": "often late for their meetings.", "statement": "minimize his penalty"},
+		{"question_ID":7, "text":"Mechanism -4", "boss": "often late for their meetings.", "statement": "minimize his penalty"}
+	],
+	"randomize_questions": true,
+	"questions_subset_size" : 1,
+	"payment_function": "payment123",
+	"public": {
+		"answer_forms": [
+			{"answer_ID":0, "template": "answer1", "timer": 0}
+		],
+		"show_payment": false,
+		"show_timer": false,
+		"show_history": false,
+		"history_duration": 3,
+		"history_fields": ["Answer", "Payment", "monies"]
+	}
+}
